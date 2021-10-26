@@ -1011,6 +1011,7 @@ rulePartOfDays = Rule
               "evening"  -> (hour False 18, hour False 0)
               "night"    -> (hour False 18, hour False 0)
               "lunch"    -> (hour False 12, hour False 14)
+              "afternoon"-> (hour False 12, hour False 17)
               "at lunch" -> (hour False 12, hour False 14)
               _          -> (hour False 12, hour False 19)
         td <- interval TTime.Open start end

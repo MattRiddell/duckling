@@ -145,7 +145,7 @@ latentCorpus = (testContext, testOptions {withLatent = True}, xs)
                  [ "morning"
                  ]
       , examples (datetimeInterval
-          ((2013, 2, 12, 12, 0, 0), (2013, 2, 12, 19, 0, 0)) Hour)
+          ((2013, 2, 12, 12, 0, 0), (2013, 2, 12, 17, 0, 0)) Hour)
                  [ "afternoon"
                  ]
       , examples (datetimeInterval
@@ -1278,7 +1278,7 @@ allExamples = concat
   , examples (datetimeOpenInterval Before (2013, 2, 12, 11, 0, 0) Hour)
              [ "before 11 am"
              ]
-  , examples (datetimeInterval ((2013, 2, 12, 12, 0, 0), (2013, 2, 12, 19, 0, 0)) Hour)
+  , examples (datetimeInterval ((2013, 2, 12, 12, 0, 0), (2013, 2, 12, 17, 0, 0)) Hour)
              [ "in the afternoon"
              ]
   , examples (datetimeInterval ((2013, 2, 12, 8, 0, 0), (2013, 2, 12, 19, 0, 0)) Hour)
@@ -1344,7 +1344,7 @@ allExamples = concat
              , "tomorrow at 5pm"
              , "tomorrow evening at 5"
              ]
-  , examples (datetimeInterval ((2013, 2, 13, 12, 0, 0), (2013, 2, 13, 19, 0, 0)) Hour)
+  , examples (datetimeInterval ((2013, 2, 13, 12, 0, 0), (2013, 2, 13, 17, 0, 0)) Hour)
              [ "tomorrow afternoon"
              , "tomorrow afternoonish"
              ]
