@@ -664,10 +664,10 @@ longWEBefore monday = interval' TTime.Open (start, end)
     tue = cycleNthAfter False TG.Day 1 monday
 
 weekend :: TimeData
-weekend = interval' TTime.Open (fri, mon)
+weekend = interval' TTime.Open (sat, sun)
   where
-    fri = intersect' (dayOfWeek 5, hour False 18)
-    mon = intersect' (dayOfWeek 1, hour False 0)
+    sat = intersect' (dayOfWeek 6, hour False 0)
+    sun = intersect' (dayOfWeek 0, hour False 0)
 
 workweek :: TimeData
 workweek = interval' TTime.Open (mon, fri)
